@@ -3,6 +3,7 @@
 namespace Native\Laravel\Menu\Items;
 
 use Native\Laravel\Enums\RolesEnum;
+use Native\Laravel\Menu\Contracts\MenuItem;
 
 class Role extends MenuItem
 {

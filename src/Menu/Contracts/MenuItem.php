@@ -1,10 +1,8 @@
 <?php
 
-namespace Native\Laravel\Menu\Items;
+namespace Native\Laravel\Menu\Contracts;
 
-use Native\Laravel\Contracts\MenuItem as MenuItemContract;
-
-abstract class MenuItem implements MenuItemContract
+abstract class MenuItem
 {
     protected string $type = 'normal';
 

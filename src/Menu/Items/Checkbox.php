@@ -2,6 +2,9 @@
 
 namespace Native\Laravel\Menu\Items;
 
+
+use Native\Laravel\Menu\Contracts\MenuItem;
+
 class Checkbox extends MenuItem
 {
     protected string $type = 'checkbox';

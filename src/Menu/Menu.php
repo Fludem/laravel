@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Native\Laravel\Menu;
 
 use Illuminate\Support\Traits\Conditionable;
 use Native\Laravel\Client\Client;
-use Native\Laravel\Contracts\MenuItem;
 use Native\Laravel\Enums\RolesEnum;
+use Native\Laravel\Menu\Contracts\AppMenu;
 use Native\Laravel\Menu\Items\Checkbox;
 use Native\Laravel\Menu\Items\Event;
 use Native\Laravel\Menu\Items\Label;
@@ -13,7 +15,7 @@ use Native\Laravel\Menu\Items\Link;
 use Native\Laravel\Menu\Items\Role;
 use Native\Laravel\Menu\Items\Separator;
 
-class Menu implements MenuItem
+class Menu implements AppMenu
 {
     use Conditionable;
 
@@ -125,7 +127,7 @@ class Menu implements MenuItem
 
     public function toArray(): array
     {
-        $items = collect($this->items)->map(fn (MenuItem $item) => $item->toArray())->toArray();
+        $items = collect($this->items)->map(fn(MenuItem $item) => $item->toArray())->toArray();
         $label = $this->prepend;
 
         return [

@@ -2,6 +2,8 @@
 
 namespace Native\Laravel\Menu\Items;
 
+use Native\Laravel\Menu\Contracts\MenuItem;
+
 class Link extends MenuItem
 {
     protected string $type = 'link';

@@ -2,6 +2,8 @@
 
 namespace Native\Laravel\Menu\Items;
 
+use Native\Laravel\Menu\Contracts\MenuItem;
+
 class Event extends MenuItem
 {
     public function __construct(protected string $event, protected ?string $label, protected ?string $accelerator = null)
