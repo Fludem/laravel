@@ -8,6 +8,7 @@ use Illuminate\Support\Traits\Conditionable;
 use Native\Laravel\Client\Client;
 use Native\Laravel\Enums\RolesEnum;
 use Native\Laravel\Menu\Contracts\AppMenu;
+use Native\Laravel\Menu\Contracts\MenuItem;
 use Native\Laravel\Menu\Items\Checkbox;
 use Native\Laravel\Menu\Items\Event;
 use Native\Laravel\Menu\Items\Label;
